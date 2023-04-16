@@ -14,7 +14,7 @@ const btnDestroy = document.querySelector('button[data-destroy]');
 const createBoxes = amount => {
 	const divToAdd = [];
 	for (let i = 0; i < amount; i++) {
-    const div = document.createElement("div");
+    const div = document.createElement("div"); 
     div.style.height = `${30 + 10 * i}px`;
 	div.style.width = `${30 + 10 * i}px`
     div.style.background = getRandomHexColor();
@@ -37,4 +37,4 @@ const destroyBoxes = () => {
 
 btnDestroy.addEventListener('click', () => {
 	destroyBoxes.call();
-});
+}); 
